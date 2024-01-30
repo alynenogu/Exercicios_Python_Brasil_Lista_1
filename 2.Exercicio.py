@@ -6,8 +6,8 @@ def pergunta_numero():
     resultado = int(input("Escolha um número: "))
     return resultado
 
-#def mostre_numero(resultado):
-#    print("O número informado foi: ", resultado)
+def mostre_numero(resultado):
+   print("O número informado foi: ", resultado)
 
 def par_ou_impar(resultado):
     if resultado % 2 ==0:
@@ -15,4 +15,4 @@ def par_ou_impar(resultado):
     elif resultado % 2 != 0:
         print("O número é ímpar e foi: ",resultado)
 
-par_ou_impar(pergunta_numero())
+mostre_numero(pergunta_numero())
