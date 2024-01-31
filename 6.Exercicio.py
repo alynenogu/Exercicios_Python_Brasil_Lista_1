@@ -8,8 +8,10 @@ def pergunta_raio_circulo():
     return raio
 
 def calcula_area_circulo(raio):
-    resultado = raio * pi
-    return print("A área é: ", resultado)
+    resultado = pi*(raio**2)
+    return  resultado
 
 
-calcula_area_circulo(pergunta_raio_circulo())
+raio = (pergunta_raio_circulo())
+resultado_final = calcula_area_circulo(raio)
+print("A área do círculo é:",resultado_final)
