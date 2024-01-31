@@ -9,11 +9,11 @@ def pergunta_numeros_inteiros_primeiro():
 
     return primeiro_numero
 
-def pergunta_numeros_inteiros_segundo():
+#def pergunta_numeros_inteiros_segundo():
    
-    segundo_numero = int(input("Digite o segundo número inteiro: "))
+#    segundo_numero = int(input("Digite o segundo número inteiro: "))
 
-    return segundo_numero
+ #   return segundo_numero
 
 def pergunta_numero_real():
     terceiro_numero = float(input("Digite o terceiro número decimal: "))
@@ -33,7 +33,7 @@ def calcula_terceiro_cubo(terceiro_numero):
     return print("O terceiro elevado ao cubo:",resultado_terceiro_cubo)
 
 primeiro_valor = pergunta_numeros_inteiros_primeiro()
-segundo_valor = pergunta_numeros_inteiros_segundo()
+segundo_valor = pergunta_numeros_inteiros_primeiro()
 terceiro_valor = pergunta_numero_real()
 calcula_dobro_primeiro_segundo(primeiro_valor,segundo_valor)
 calcula_primeiro_terceiro(primeiro_valor,terceiro_valor)
