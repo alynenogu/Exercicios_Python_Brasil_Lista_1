@@ -9,7 +9,8 @@ def pergunta_altura():
 def calcula_peso_ideal(altura):
     resultado = (72.7*altura) - 58
 
-    return print("O resultado para o peso ideal é :", resultado)
+    return  resultado 
 
 altura_informada = pergunta_altura()
-calcula_peso_ideal(altura_informada)
+resultado = calcula_peso_ideal(altura_informada)
+print("O peso ideal é: ",resultado)
