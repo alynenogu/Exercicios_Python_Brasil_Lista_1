@@ -11,8 +11,9 @@ def calcula_area_quadrado(lado):
 def dobro_area(resultado):
     resultado_final = resultado *2
     
-    return print("A área é: ", resultado, "O dobro da área é: ", resultado_final)
+    return resultado_final
 
 lado = pergunta_lado()
 area = calcula_area_quadrado(lado)
-dobro_area(area)
+resultado_final = dobro_area(area)
+print("A área é: ", area, "O dobro da área é:", resultado_final)
