@@ -7,8 +7,9 @@ def pergunta_temperatura_celsius():
 
 def calcula_para_fahrenheit(temperatura):
     resultado = temperatura * 9/5 + 32
-    return print("A temperatura em Fahrenheit é: ", resultado)
+    return resultado
 
 
 temperatura = pergunta_temperatura_celsius()
-calcula_para_fahrenheit(temperatura)
+resultado = calcula_para_fahrenheit(temperatura)
+print ("A temperatura em Fahrenheit é: ", resultado)
