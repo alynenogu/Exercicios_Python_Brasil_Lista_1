@@ -11,7 +11,8 @@ def pergunta_temperatura_fahrenheit():
 def calcula_para_celsius(temperatura):
     temperatura_celsius = 5 * ((temperatura-32) / 9)
 
-    return print("A temperatura em Celsius é: ", temperatura_celsius)
+    return temperatura_celsius
 
 fahrenheit = pergunta_temperatura_fahrenheit()
-calcula_para_celsius(fahrenheit)
+resultado = calcula_para_celsius(fahrenheit)
+print("A temperatura em Celsius é: ", resultado)
