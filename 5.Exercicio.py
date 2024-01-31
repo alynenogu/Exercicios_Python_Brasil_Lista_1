@@ -8,8 +8,11 @@ def pergunta_metros():
 def converte_cm(metros):
     resultado = metros*100
 
-    return print("O valor em cm é: ", resultado)
+    return resultado
 
 
-converte_cm(pergunta_metros())
+valor_metros = pergunta_metros()
+resultado_cm = converte_cm(valor_metros)
+
+print("O valor em cm é: ", resultado_cm)
 
