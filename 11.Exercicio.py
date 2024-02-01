@@ -3,11 +3,11 @@
 #a soma do triplo do primeiro com o terceiro.
 #o terceiro elevado ao cubo.
 
-def pergunta_numeros_inteiros_primeiro():
-    primeiro_numero = int(input("Digite o primeiro número inteiro: "))
+def pergunta_numeros_inteiros(mensagem):
+    numero = int(input(mensagem))
     
 
-    return primeiro_numero
+    return numero
 
 #def pergunta_numeros_inteiros_segundo():
    
@@ -22,19 +22,24 @@ def pergunta_numero_real():
 
 def calcula_dobro_primeiro_segundo(primeiro_numero,segundo_numero):
     resultado_primeiro_segundo = ((primeiro_numero)*2) + (segundo_numero/2)
-    return print("O produto do dobro do primeiro com metade do segundo é: ", resultado_primeiro_segundo)
+    return resultado_primeiro_segundo
 
 def calcula_primeiro_terceiro (primeiro_numero,terceiro_numero):
     resultado_primeiro_terceiro = (primeiro_numero*3)+terceiro_numero
-    return print("a soma do triplo do primeiro com o terceiro", resultado_primeiro_terceiro)
+    return resultado_primeiro_terceiro
 
 def calcula_terceiro_cubo(terceiro_numero):
     resultado_terceiro_cubo = terceiro_numero**3
-    return print("O terceiro elevado ao cubo:",resultado_terceiro_cubo)
+    return  resultado_terceiro_cubo
 
-primeiro_valor = pergunta_numeros_inteiros_primeiro()
-segundo_valor = pergunta_numeros_inteiros_primeiro()
+primeiro_valor = pergunta_numeros_inteiros("Digite o primeiro número: ")
+segundo_valor = pergunta_numeros_inteiros("Digite o segundo número: ")
 terceiro_valor = pergunta_numero_real()
-calcula_dobro_primeiro_segundo(primeiro_valor,segundo_valor)
-calcula_primeiro_terceiro(primeiro_valor,terceiro_valor)
-calcula_terceiro_cubo(terceiro_valor)
+resultado_dobro_primeiro_segundo = calcula_dobro_primeiro_segundo(primeiro_valor,segundo_valor)
+resultado_dobro_primeiro_terceiro = calcula_primeiro_terceiro(primeiro_valor,terceiro_valor)
+resultado_terceiro_cubo = calcula_terceiro_cubo(terceiro_valor)
+
+print("O produto do dobro do primeiro com metade do segundo é: ", resultado_dobro_primeiro_segundo)
+print("a soma do triplo do primeiro com o terceiro", resultado_dobro_primeiro_terceiro)
+print("O terceiro elevado ao cubo:",resultado_terceiro_cubo)
+
